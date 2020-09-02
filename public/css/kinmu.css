@@ -1,0 +1,59 @@
+.train-judge{
+    padding-top: 80px; 
+    margin-left: 12vw;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.tsukin-main{
+    height: 72vh;
+    padding-top: 40px;
+    margin-left: 12vw;
+    position: relative;
+}
+
+.line{
+    height: 23vh;
+    width: 10px;
+    margin-left: 12px;
+    z-index: 0;
+
+}
+
+.line-sobu{
+    background-color: yellow;
+}
+
+.line-yama{
+    background-color: #7cfc00;
+}
+
+.line-yuri{
+    background-color: #00008b;
+}
+
+.station{
+    height: 30px;
+    width: 30px;
+    background-color: #ff8c00;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+    bottom: -5px;    
+}
+
+.station-box{
+    position: relative;
+    z-index: 2;
+}
+
+.sta-name{
+    float: left;
+    padding-left: 50px;
+    position: absolute;
+    font-size: 28px;
+    font-family: 'Ramabhadra', sans-serif;
+    bottom: -15px;
+}

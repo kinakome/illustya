@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/hifive/h5.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/stock.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+  <title>通勤アプリ</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="img/rect4784-6.png" class="tk-icon">
+      <p class="header-title">ILLUST-STOCK</p>
+      <div class="right-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+    <div class="hidden-menu">
+      <ul class="hidden-menu-list">
+        <li class="hidden-menu-list-item"><a href="/">ILLUST-YA</a></li>
+        <li class="hidden-menu-list-item" id="now-point">stock illustration</li>
+        <li class="hidden-menu-list-item"><a href="/chat">ILLUST-CHAT</a></li>
+        <li class="hidden-menu-list-item"><a href="/kinmu">TSU-KIN</a></li>
+      </ul>
+    </div>
+    <div class="search-box">
+      <button class="select-all-button stock-button">SELECT ALL</button>
+      <button class="remove-all-button stock-button">REMOVE CHECK</button>
+    </div>
+    <div class="search-result">
+    </div>
+    <div class="stock-decide-form">
+        <button class="delete-button">DELETE</button>
+    </div>
+  </div>
+
+  <script src="./lib/jquery/jquery-2.2.4.js"></script>
+  <script src="./lib/hifive/ejs-h5mod.js"></script>
+  <script src="./lib/hifive/h5.dev.js"></script>
+  <script src="./js/sample.js"></script>
+  <script src="./js/logic/StockLogic.js"></script>
+  <script src="./js/logic/DeleteStockLogic.js"></script>
+  <script src="./js/controller/ListAddController.js"></script>
+  <script src="./js/controller/StockListController.js"></script>
+  <script src="./js/controller/StockDeleteController.js"></script>
+  <script src="./js/stock.js"></script>
+  <script src="./js/sample.js"></script>
+</body>
+
+</html>

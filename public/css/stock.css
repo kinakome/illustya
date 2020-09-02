@@ -1,0 +1,35 @@
+.delete-button{
+    margin: 30px 0  0 33vw;
+    border-style: none;
+    border-radius: 7px;
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    background-color:#FAFAFA;
+    border: 2px solid black;
+}
+
+.select-all-box{
+    position: fixed;
+    margin-top: 62px;
+    width: 100vw;
+    background-color: #F4F4F4;
+    z-index: 1;
+    box-shadow: 0px 1px 3px #0001;
+}
+
+.stock-button {
+    margin: 10px 10px 10px 10px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #FAFAFA;
+    background-color: #a9a9a9;
+    float: left;
+}
+
+.delete-checked{
+    background-color: #d85555;
+    opacity: 1;
+}

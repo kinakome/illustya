@@ -1,0 +1,16 @@
+<script type="text/ejs" id="result">
+  <ul class="result-list">
+    [% for (let i = 0, len = results.length; i < len; i++) { %]
+    <li class="result-item" id="hidden-item">
+      <img class="item-image" src="[%= results[i].img %]"/>
+      <div class="check-field">
+        <div class="item-check" data-item-img="[%= results[i].img %]" data-item-title="[%= results[i].title %]" data-item-url="[%= results[i].page %]"><i class="fa fa-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="item-title-box">
+        <span class="item-title">[%= results[i].title %]</span>
+      </div>
+      <a href="[%= results[i].page %]"></a>
+    </li>
+    [% } %]
+  </ul>
+</script>

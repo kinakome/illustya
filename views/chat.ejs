@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/hifive/h5.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/stock.css">
+  <link rel="stylesheet" href="./css/chat.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+  <title>通勤アプリ</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="img/rect4784-6.png" class="tk-icon">
+      <p class="header-title">ILLUST-CHAT</p>
+      <div class="right-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+    <div class="hidden-menu">
+      <ul class="hidden-menu-list">
+        <li class="hidden-menu-list-item"><a href="/">ILLUST-YA</a></li>
+        <li class="hidden-menu-list-item"><a href="/stock">stock illustration</a></li>
+        <li class="hidden-menu-list-item" id="now-point">ILLUST-CHAT</li>
+        <li class="hidden-menu-list-item"><a href="/kinmu">TSU-KIN</a></li>
+      </ul>
+    </div>
+    <div class="search-box search-room">
+      <input type="text" name="room" maxlength="4" placeholder="Room Number" class="room-search-box"></textarea>
+      <button class="select-all-button stock-button" id="connect-button">CONNECT</button>
+    </div>
+    <div class="search-box join-room">
+      <button class="stock-button select-button now-button" id="my-box-button">MY-BOX</button>
+      <button class="stock-button select-button" id="friend-box-button">FRIEND-BOX</button>
+      <button class="exit-button stock-button">EXIT</button>
+    </div>
+    <div class="search-result my-box">
+    </div>
+
+    <div class="friend-result friend-box" id="hidden-box">
+        <ul class="friend-result-list">
+        </ul>
+    </div>
+
+    
+    <div class="stock-decide-form">
+        <button class="add-button">STOCK</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:8888/socket.io/socket.io.js"></script>
+  <script>
+    var socket;
+    (function(){
+        socket = io.connect("http://localhost:8888");
+    })();
+  </script>
+  <script src="./lib/jquery/jquery-2.2.4.js"></script>
+  <script src="./lib/hifive/ejs-h5mod.js"></script>
+  <script src="./lib/hifive/h5.dev.js"></script>
+  <script src="./js/sample.js"></script>
+  <script src="./js/logic/StockLogic.js"></script>
+  <script src="./js/logic/CreateStockLogic.js"></script>
+  <script src="./js/logic/DeleteStockLogic.js"></script>
+  <script src="./js/controller/ListAddController.js"></script>
+  <script src="./js/controller/StockListController.js"></script>
+  <script src="./js/controller/StockDeleteController.js"></script>
+  <script src="./js/controller/ChatController.js"></script>
+  <script src="./js/chat.js"></script>
+  <script src="./js/sample.js"></script>
+</body>
+
+</html>
